@@ -1,36 +1,43 @@
 <img src="https://github.com/DevLARLEY/mpdl/blob/main/icon.png?raw=true" alt="drawing" width="200"/>
 
-# === ONLY TESTED ON WINDOWS FOR NOW ===
-
 # mpdl
-GUI-Based MPD Downloader for DRM Protected content.
+
+Fork for macOS of [**mpdl**](https://github.com/DevLARLEY/mpdl). A tool to download DRM protected videos from the internet for educational purposes. It uses the Widevine CDM to decrypt the video and audio streams.
 
 # Requirements
-+ Python 3.12
-+ ffmpeg
-+ mp4decrypt
-+ [**Content Decryption Module**](https://forum.videohelp.com/threads/408031-Dumping-Your-own-L3-CDM-with-Android-Studio)
-+ Firefox (Installed)
+
+- Python 3.12
+- ffmpeg
+- mp4decrypt
+- [**Content Decryption Module**](https://forum.videohelp.com/threads/408031-Dumping-Your-own-L3-CDM-with-Android-Studio)
+- Firefox (Installed)
 
 # Setup
-+ Clone the Repo
-+ Install the required modules: `pip3 install -r requirements.txt`
-+ Run mpdl: `python3 mpdl.py`
+
+- Clone the Repo
+- Install the required modules: `pip3 install -r requirements.txt`
+- Run mpdl: `python3 mpdl.py`
 
 # Usage
+
 1. Select a CDM
 2. If not already in your PATH, select an ffmpeg and mp4decrypt executable
+   **HINT:** Do this if you have installed the tools via Homebrew! Follow the symlinks in `/opt/homebrew/bin/` for the executables.
 3. Optionally, specify a download directory in the settings (default is the program's root)
 4. Hit 'Apply'
 5. Start the Browser
-+ If you just want to download:
+
+- If you just want to download:
+
 6. Open the URL Sniffer
 7. Navigate to a Website utilizing DRM
 8. Choose "License URLs" in the drop-down menu
 9. Select a License URL from the list and hit 'Select'
 10. Choose "MPD URLs" from the drop-down menu
 11. Select an MPD URL from the list and hit 'Download'
-+ If you want more control:
+
+- If you want more control:
+
 6. Open the advanced mode.
 7. Enter everything you have. (**use the internal browser if you want to have the request headers automatically transferred to pywidevine**)
 8. Hit 'Download'

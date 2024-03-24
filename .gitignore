@@ -1,1 +1,7 @@
 venv/
+config.ini
+headers.py
+original_lic.bin
+parsed_lic.bin
+data/pywidevine
+__pycache__/
