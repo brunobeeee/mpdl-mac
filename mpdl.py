@@ -238,7 +238,7 @@ class Worker(QRunnable):
                 self.signals.progress.emit([self.uuid, f"Decrypting ({typ.capitalize()})", str(size) + " MB", '0', '', '', self.source])
 
                 command = getMp4Decrypt() + " --key " + " --key ".join(self.keys) + ' ' + s + ' ' + out
-                process = Popen(command, stdout=PIPE, stderr=PIPE)
+                process = Popen(command, shell=True, stdout=PIPE, stderr=PIPE)
                 stdout, stderr = process.communicate()
                 self.signals.progress.emit(
                     [self.uuid, f"Decrypting ({typ.capitalize()})", str(size) + " MB", '100', '', '', self.source])
