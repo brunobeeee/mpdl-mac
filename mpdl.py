@@ -1213,9 +1213,12 @@ class Main(QtWidgets.QWidget):
                 self.downloads.table.cellWidget(i, 6).setText(arr[6])
 
     def complete(self, uuid):
-        for i in range(self.downloads.table.rowCount()):
-            if uuid == self.downloads.table.cellWidget(i, 0).text():
-                self.downloads.table.removeRow(i)
+        # Commenting this out bc it made problems all the time
+        # Also I like the entries being displayed even after they are finished
+        pass
+        # for i in range(self.downloads.table.rowCount()):
+        #     if uuid == self.downloads.table.cellWidget(i, 0).text():
+        #         self.downloads.table.removeRow(i)
 
     def __init__(self):
         super().__init__()
