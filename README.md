@@ -1,5 +1,7 @@
 <img src="https://github.com/DevLARLEY/mpdl/blob/main/icon.png?raw=true" alt="drawing" width="200"/>
 
+# === Please do not use this anymore it's a terrbile piece of software ===
+
 # mpdl
 
 Fork for macOS of [**mpdl**](https://github.com/DevLARLEY/mpdl). A tool to download DRM protected videos from the internet for educational purposes. It uses the Widevine CDM to decrypt the video and audio streams.
